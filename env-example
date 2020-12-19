@@ -1,0 +1,16 @@
+# Can get it on https://home.openweathermap.org/api_keys
+OWM_API_KEY = '488db42b2af0312fef687f076fd85bba'
+
+# The language for texts
+# en_US.UTF8, en_GB.UTF8, es_ES.UTF8
+# Look at locale/ dir to see the available translations
+# You can add your own translation
+# If leave empty, the system local will be used
+CUSTOM_LOCALE = 'ca_ES.UTF8'
+
+# 'metric' or 'imperial'
+UNITS_SYSTEM = 'metric'
+
+# What calendar from your Google account will be displayed
+# 'calendarID':'abbr'
+CALENDAR_LIST = "{'youremail@gmail.com':'Y','groupcalendarID@group.calendar.google.com':'G','yoursonemail@gmail.com':'S'}"

@@ -1,8 +1,15 @@
 import os
 import ast
 from dotenv import load_dotenv
+
+# Set the data in a .env file
+# You can see the env-example file
 load_dotenv()
 
+# The language for texts
+# en_US.UTF8, en_GB.UTF8, es_ES.UTF8
+# Look at locale/ dir to see the available translations
+# You can add your own translation
 # If leave empty, the system local will be used
 CUSTOM_LOCALE = os.getenv('CUSTOM_LOCALE')
 
