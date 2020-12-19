@@ -1,0 +1,114 @@
+# Catalan translations for PACKAGE package
+# Traduccions al català del paquet «PACKAGE».
+# Copyright (C) 2020 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Automatically generated, 2020.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-12-13 16:42+0100\n"
+"PO-Revision-Date: 2020-12-13 16:29+0100\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: ca\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../generate_page_error.py:18 ../generate_page.py:48
+msgid "Last update"
+msgstr "Darrera actualització"
+
+#: ../generate_page.py:28
+msgid "January"
+msgstr "gener"
+
+#: ../generate_page.py:29
+msgid "February"
+msgstr "febrer"
+
+#: ../generate_page.py:30
+msgid "March"
+msgstr "març"
+
+#: ../generate_page.py:31
+msgid "April"
+msgstr "abril"
+
+#: ../generate_page.py:32
+msgid "May"
+msgstr "maig"
+
+#: ../generate_page.py:33
+msgid "June"
+msgstr "juny"
+
+#: ../generate_page.py:34
+msgid "July"
+msgstr "juliol"
+
+#: ../generate_page.py:35
+msgid "August"
+msgstr "agost"
+
+#: ../generate_page.py:36
+msgid "September"
+msgstr "setembre"
+
+#: ../generate_page.py:37
+msgid "October"
+msgstr "octubre"
+
+#: ../generate_page.py:38
+msgid "November"
+msgstr "novembre"
+
+#: ../generate_page.py:39
+msgid "December"
+msgstr "desembre"
+
+#: ../funcs.py:16
+msgid "ERROR"
+msgstr "ERROR"
+
+#: ../familycalendar.py:19
+msgid "Start"
+msgstr "Inici"
+
+#: ../familycalendar.py:21
+msgid "Getting calendar events"
+msgstr "Obtenint calendaris"
+
+#: ../familycalendar.py:23
+msgid "Cannot get calendar events"
+msgstr "No s'han obtingut els calendaris"
+
+#: ../familycalendar.py:26
+msgid "Getting weather forecast"
+msgstr "Obtenint predicció de l'oratge"
+
+#: ../familycalendar.py:28
+msgid "Cannot get weather forecast"
+msgstr "No s'ha obtingut la predicción de l'oratge"
+
+#: ../familycalendar.py:31
+msgid "Generanting HTML from the events"
+msgstr "Generant HTML dels calendaris"
+
+#: ../familycalendar.py:35
+msgid "Generanting HTML from weather forecast"
+msgstr "Generant HTML de l'oratge"
+
+#: ../familycalendar.py:39
+msgid "Generanting HTML page"
+msgstr "Generant pàgina HTML"
+
+#: ../familycalendar.py:43
+msgid "Generating JPG image from the HTML page"
+msgstr "Generant imatge JPG de la pàgina HTML"
+
+#: ../familycalendar.py:47
+msgid "Done!"
+msgstr "Fet!"

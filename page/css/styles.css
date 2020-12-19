@@ -1,0 +1,239 @@
+html,
+body {
+
+  margin: 0;
+  padding: 0;
+  border: 0;
+
+  background-color: #ffffff;
+  color: #000000;
+
+  font-family: 'Noto Sans JP', Verdana, Arial, Helvetica, sans-serif;
+  font-size: 12pt;
+  font-weight: 300;
+  background-color: #333;
+
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 900;
+}
+
+.main-container {
+  width: 1304px;
+  height: 984px;
+  display: block;
+  overflow: hidden;
+  margin: auto;
+  background-color: #fff;
+}
+
+.header-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 24pt;
+  margin-bottom: 10px;
+}
+
+/* ************************************************************* */
+/* Current month */
+
+.header-row .current-month {
+  display: block;
+  width: 49.99%;
+  margin-left: 0.5em;
+}
+
+.header-row .current-month .current-month-name {
+  font-weight: 900;
+}
+
+.header-row .current-month .current-year {
+  font-weight: 100;
+}
+
+/* ************************************************************* */
+/* Weather */
+
+.header-row .weather {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 49.99%;
+  height: 26px;
+  margin-right: 0.5em;
+}
+
+.header-row .weather .weather-col {
+  width: auto;
+  line-height: 0.15em;
+  margin-left: 1em;
+  margin-top: 0.1em;
+}
+
+.header-row .weather .weather-col .weather-row {
+  display: block;
+  text-align: center;
+}
+
+.header-row .weather .weather-col .weather-day {
+  display: inline-block;
+  width: auto;
+  height: 0.6em;
+  vertical-align: middle;
+  font-size: 14pt;
+  font-weight: 600;
+  margin-left: .3em;
+  margin-right: .5em;
+}
+
+.header-row .weather .weather-col .weather-img {
+  display: inline-block;
+  width: auto;
+  vertical-align: middle;
+}
+
+.header-row .weather .weather-col .weather-img img {
+  margin: auto;
+}
+
+.header-row .weather .weather-col .weather-temp {
+  display: inline-block;
+  width: auto;
+  vertical-align: middle;
+  font-size: 8pt;
+  font-weight: 300;
+  margin: auto;
+}
+
+/* ************************************************************* */
+/* Calendar */
+
+.calendar {
+  display: block;
+  width: 100%;
+}
+
+.calendar .calendar-dow-row {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.calendar .calendar-dow-col {
+  display: inline-block;
+  width: 186px;
+  text-align: center;
+}
+
+.calendar .calendar-row {
+  display: block;
+  width: 100%;
+  height: 148px;
+  margin-bottom: 4px;
+}
+
+.calendar .calendar-row:last-child {
+  margin-bottom: 0;
+}
+
+.calendar .calendar-col {
+  display: inline-block;
+  width: 186px;
+  height: 144px;
+  vertical-align: top;
+  overflow: hidden;
+}
+
+.calendar .calendar-events-day {
+  display: block;
+  width: 182px;
+  height: 104px;
+  overflow: hidden;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+.calendar .calendar-col.another-month {
+  color: #ccc;
+}
+
+.calendar .calendar-col.current-date {
+  color: #ff0000;
+}
+
+.calendar .calendar-col .calendar-day {
+  display: block;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.5em;
+  height: 40px;
+}
+
+.calendar .current-date .calendar-day-number {
+  padding: 1px 5px;
+  color: #ffffff;
+  background-color: #ff0000;
+  border-radius: 50%;
+}
+
+.calendar .calendar-col .calendar-event {
+  font-size: 9pt;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 1.35em;
+}
+
+.calendar .calendar-col .calendar-event.pass-time > * {
+  text-decoration: line-through;
+}
+
+.calendar .calendar-col .calendar-time,
+.calendar .calendar-col .calendar-owner,
+.calendar .calendar-col .calendar-summary {
+  padding-left: 0.2em;
+}
+
+.calendar .calendar-col .calendar-owner {
+  width: 1.1em;
+  font-style: italic;
+  padding-right: 0.2em;
+}
+
+.calendar .calendar-col .calendar-summary {
+  font-weight: 600;
+}
+
+/* ************************************************************* */
+/* Others */
+
+.error-wrapper {
+  display: flex;
+  width: 99.99%;
+  height: 98%;
+  justify-content: center;
+  align-items: center;
+  }
+
+.error-msg {
+  display: block;
+  font-size: 28pt;
+  color: red;
+  }
+
+.last-update {
+  display: block;
+  width: 99.9%;
+  text-align: right;
+  font-size: 8pt;
+  color: #555;
+  padding-right: 1em;
+}

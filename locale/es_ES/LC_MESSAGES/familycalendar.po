@@ -1,0 +1,115 @@
+# Spanish translations for PACKAGE package
+# Traducciones al español para el paquete PACKAGE.
+# Copyright (C) 2020 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Automatically generated, 2020.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-12-13 16:42+0100\n"
+"PO-Revision-Date: 2020-12-13 16:29+0100\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../generate_page_error.py:18 ../generate_page.py:48
+msgid "Last update"
+msgstr "Última actualitzación"
+
+#: ../generate_page.py:28
+msgid "January"
+msgstr "enero"
+
+#: ../generate_page.py:29
+msgid "February"
+msgstr "febrero"
+
+#: ../generate_page.py:30
+msgid "March"
+msgstr "marzo"
+
+#: ../generate_page.py:31
+msgid "April"
+msgstr "abril"
+
+#: ../generate_page.py:32
+msgid "May"
+msgstr "mayo"
+
+#: ../generate_page.py:33
+msgid "June"
+msgstr "junio"
+
+#: ../generate_page.py:34
+msgid "July"
+msgstr "julio"
+
+#: ../generate_page.py:35
+msgid "August"
+msgstr "agosto"
+
+#: ../generate_page.py:36
+msgid "September"
+msgstr "septiembre"
+
+#: ../generate_page.py:37
+msgid "October"
+msgstr "octubre"
+
+#: ../generate_page.py:38
+msgid "November"
+msgstr "noviembre"
+
+#: ../generate_page.py:39
+msgid "December"
+msgstr "diciembre"
+
+#: ../funcs.py:16
+msgid "ERROR"
+msgstr "ERROR"
+
+#: ../familycalendar.py:19
+msgid "Start"
+msgstr "Inicio"
+
+#: ../familycalendar.py:21
+msgid "Getting calendar events"
+msgstr "Obteniendo calendarios"
+
+#: ../familycalendar.py:23
+msgid "Cannot get calendar events"
+msgstr "No se pudieron obtener los calendarios"
+
+#: ../familycalendar.py:26
+msgid "Getting weather forecast"
+msgstr "Obteniendo predicción metereológica"
+
+#: ../familycalendar.py:28
+msgid "Cannot get weather forecast"
+msgstr "No se pudo obtener la predicción metereológica"
+
+#: ../familycalendar.py:31
+msgid "Generanting HTML from the events"
+msgstr "Generando HTML del calendario"
+
+#: ../familycalendar.py:35
+msgid "Generanting HTML from weather forecast"
+msgstr "Generando HTML de la predicción metereológica"
+
+#: ../familycalendar.py:39
+msgid "Generanting HTML page"
+msgstr "Generando página HTML"
+
+#: ../familycalendar.py:43
+msgid "Generating JPG image from the HTML page"
+msgstr "Generando imagen JPG de la página HTML"
+
+#: ../familycalendar.py:47
+msgid "Done!"
+msgstr "¡Hecho!"
