@@ -9,7 +9,7 @@ from pyowm.utils import config
 from pyowm.utils import timestamps
 
 from funcs import echoMsg, echoError
-from settings import OWM_API_KEY, UNITS_SYSTEM
+from settings import OWM_API_KEY, OWN_LATITUDE, OWN_LONGITUDE, UNITS_SYSTEM
 
 def getWeatherData():
 
@@ -17,7 +17,7 @@ def getWeatherData():
 
         owm = OWM(OWM_API_KEY)
         mgr = owm.weather_manager()
-        one_call = mgr.one_call(lat=39.46975, lon=-0.37739, units=UNITS_SYSTEM)
+        one_call = mgr.one_call(lat=OWN_LATITUDE, lon=OWN_LONGITUDE, units=UNITS_SYSTEM)
 
         weatherForecast = []
 
@@ -25,7 +25,7 @@ def getWeatherData():
 
         for fc in one_call.forecast_daily:
 
-            # Descartem dates passades
+            # Discard passed dates
             if datetime.fromtimestamp(fc.ref_time) < currentDate:
                 continue
 

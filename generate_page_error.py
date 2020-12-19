@@ -14,6 +14,7 @@ def generatePageError(errorMsg):
 
     replaceStrings = {
                         'HTML_LANG': locale.getlocale()[0],
+                        'PAGE_TITLE': _('Family calendar'),
                         'ERROR_MESSAGE': errorMsg,
                         'LAST_UPDATE_LEGEND': _('Last update'),
                         'LAST_UPDATE': lastUpdate.strftime('%x %X')

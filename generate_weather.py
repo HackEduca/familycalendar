@@ -4,7 +4,7 @@ from settings import WEATHER_ICONS, UNITS_SYSTEM
 
 def generateWeather():
 
-    # Carreguem el fitxer events.json que haurà generat nextevents.py
+    # Load the JSON weather data collected by getWeatherData
     weatherData = json.load(open('data/weather.json'))
 
     tempMeasure = 'C' if UNITS_SYSTEM == 'metric' else 'F'
@@ -15,8 +15,8 @@ def generateWeather():
 
         weatherDate = datetime.fromtimestamp(fc['date'])
 
-        # Si el códi de la condició del temps no existeix en WEATHER_ICONS
-        # Fiquem el códi 999
+        # If the weather condition code not exists in WEATHER_ICONS
+        # use the 999 code to tell that something was wrong
         icon = WEATHER_ICONS[fc['weather_code']] if fc['weather_code'] in WEATHER_ICONS else WEATHER_ICONS[999]
 
         html += '<div class="weather-col">'
@@ -34,8 +34,8 @@ def generateWeather():
         if maxDays == 0:
             break
 
-    # Ho guardem en weather.html
-    # Altre procés s'encarrega de ficar-ho on cal
+    # Save the html
+    # The generatePage will compose the final page
     with open('out/weather.html', 'wt') as fout:
         fout.write(html)
         fout.close()

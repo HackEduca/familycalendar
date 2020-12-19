@@ -24,27 +24,28 @@ def getNextEvents():
             with open('config/token.pickle', 'rb') as token:
                 creds = pickle.load(token)
         else:
-            raise Exception('config/token.pickle not found')
+            raise Exception('config/token.pickle not found. Run "pyhton3 connect_google_calendar.py"')
 
         if not creds or not creds.valid:
             if creds and creds.expired and creds.refresh_token:
                 creds.refresh(Request())
             else:
-                raise Exception('config/token.pickle expired and cannot refresh')
+                raise Exception('config/token.pickle expired and cannot refresh. Run "pyhton3 connect_google_calendar.py"')
 
         calendarService = build('calendar', 'v3', credentials=creds)
 
         timeMin = (date.today()-timedelta(days=30)).isoformat() + 'T00:00:00.0000Z' # 'Z' indicates UTC time
         timeMax = (date.today()+timedelta(days=60)).isoformat() + 'T00:00:00.0000Z' # 'Z' indicates UTC time
 
-        # Recuperamos los calendarios que se indican en CALENDAR_LIST
+        # Retrieve the calendars from CALENDAR_LIST
         events = []
         for calendarId in CALENDAR_LIST.keys():
             events += getEvents(calendarId, timeMin, timeMax)
 
-        # Ahora ordenamos los eventos por la fecha de inicio
+        # Sort the events by start time
         events = sorted(events, key=lambda k: k['start'])
 
+        # Save the events to a JSON
         with open('data/events.json', 'w') as fout:
             json.dump(events , fout)
 
@@ -73,7 +74,7 @@ def getEvents(calendarId, timeMin, timeMax):
     events = events_result.get('items', [])
 
     if not events:
-        print('No hi han events.')
+        return ret
 
     for event in events:
         evt = {}

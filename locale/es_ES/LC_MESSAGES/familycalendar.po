@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-12-13 16:42+0100\n"
+"POT-Creation-Date: 2020-12-19 12:38+0100\n"
 "PO-Revision-Date: 2020-12-13 16:29+0100\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -18,59 +18,63 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../generate_page_error.py:18 ../generate_page.py:48
+#: ../generate_page_error.py:17 ../generate_page.py:48
+msgid "Family calendar"
+msgstr "Calendario familiar"
+
+#: ../generate_page_error.py:19 ../generate_page.py:53
 msgid "Last update"
 msgstr "Última actualitzación"
 
-#: ../generate_page.py:28
+#: ../generate_page.py:32
 msgid "January"
 msgstr "enero"
 
-#: ../generate_page.py:29
+#: ../generate_page.py:33
 msgid "February"
 msgstr "febrero"
 
-#: ../generate_page.py:30
+#: ../generate_page.py:34
 msgid "March"
 msgstr "marzo"
 
-#: ../generate_page.py:31
+#: ../generate_page.py:35
 msgid "April"
 msgstr "abril"
 
-#: ../generate_page.py:32
+#: ../generate_page.py:36
 msgid "May"
 msgstr "mayo"
 
-#: ../generate_page.py:33
+#: ../generate_page.py:37
 msgid "June"
 msgstr "junio"
 
-#: ../generate_page.py:34
+#: ../generate_page.py:38
 msgid "July"
 msgstr "julio"
 
-#: ../generate_page.py:35
+#: ../generate_page.py:39
 msgid "August"
 msgstr "agosto"
 
-#: ../generate_page.py:36
+#: ../generate_page.py:40
 msgid "September"
 msgstr "septiembre"
 
-#: ../generate_page.py:37
+#: ../generate_page.py:41
 msgid "October"
 msgstr "octubre"
 
-#: ../generate_page.py:38
+#: ../generate_page.py:42
 msgid "November"
 msgstr "noviembre"
 
-#: ../generate_page.py:39
+#: ../generate_page.py:43
 msgid "December"
 msgstr "diciembre"
 
-#: ../funcs.py:16
+#: ../funcs.py:11
 msgid "ERROR"
 msgstr "ERROR"
 

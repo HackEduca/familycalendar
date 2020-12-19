@@ -16,6 +16,11 @@ CUSTOM_LOCALE = os.getenv('CUSTOM_LOCALE')
 # Can get it on https://home.openweathermap.org/api_keys
 OWM_API_KEY = os.getenv('OWM_API_KEY')
 
+# Your latitude and longitude coordinates in degrees
+# You can get it from https://www.latlong.net/
+OWN_LATITUDE = float(os.getenv('OWM_LATITUDE'))
+OWN_LONGITUDE = float(os.getenv('OWM_LONGITUDE'))
+
 # 'metric' or 'imperial'
 UNITS_SYSTEM = os.getenv('UNITS_SYSTEM')
 

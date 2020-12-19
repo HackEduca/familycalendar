@@ -9,9 +9,7 @@ function compilePO {
 
   msgfmt $DESTPATH/familycalendar.po --output-file=$DESTPATH/familycalendar.mo
 
-  rm -f $LOCALEPATH/familycalendar.po~
-  rm -f $LOCALEPATH/$LANG/familycalendar.po~
-  rm -f $LOCALEPATH/$LANG/LC_MESSAGES/familycalendar.po~
+  rm -f $DESTPATH/familycalendar.po~
 
 }
 

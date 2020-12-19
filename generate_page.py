@@ -6,7 +6,7 @@ from funcs import _
 
 def generatePage():
 
-    # Averigüem la data i hora de modificació del fitxer de dades
+    # Get the last date and time data file modification
     eventsFile = pathlib.Path('data/events.json')
     assert eventsFile.exists(), f'No such file: {eventsFile}'
 
@@ -45,6 +45,7 @@ def generatePage():
 
     replaceStrings = {
                         'HTML_LANG': locale.getlocale()[0],
+                        'PAGE_TITLE': _('Family calendar'),
                         'MONTH_NAME': MONTH_NAMES[lastUpdate.month],
                         'YEAR': str(lastUpdate.year),
                         'WEATHER': weatherHTML,

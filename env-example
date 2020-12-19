@@ -1,5 +1,11 @@
 # Can get it on https://home.openweathermap.org/api_keys
-OWM_API_KEY = '488db42b2af0312fef687f076fd85bba'
+OWM_API_KEY = 'YOUR-API-KEY-FROM-OPENWEATHERMAP'
+
+# Your latitude and longitude coordinates in degrees
+# You can get it from https://www.latlong.net/
+# Example: Valencia, ES
+OWM_LATITUDE = '39.470242'
+OWM_LONGITUDE = '-0.376800'
 
 # The language for texts
 # en_US.UTF8, en_GB.UTF8, es_ES.UTF8
